@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Warung Tegal</title>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<style type="text/css">
+			header, section, footer, aside, nav, article, figure, figcaption {
+				display: block;
+			}
+			body {
+				/*color: #666666;*/
+				/*background-color: #f9f8f6;*/
+				/*background-image: url("images/dark-wood.jpg");*/
+				background-position: center;
+				font-family: Georgia, Times, serif;
+				line-height: 1.4em;
+				margin: 0px;
+			}
+			.wrapper {
+				/*width: 940px;*/
+				/*margin: 20px auto 20px auto;*/
+				/*border: 2px solid #000000;*/
+				background-color: #F0ECE3;
+			}
+			header {
+				/*height: 160px;*/
+				/*background-image: url(images/header.png);*/
+				/*background-position: center;*/
+			}
+			h1 {
+				/*text-indent: -9999px;*/
+				/*width: 940px;*/
+				/*height: 130px;*/
+				/*margin: 0px;*/
+			}
+			img.head {
+				height: 60px;
+				margin-left: 30px;
+				margin-left: 100px;
+			}
+
+
+			nav, footer {
+				clear: both;
+				color: #ffffff;
+				background-color: #8C8984;
+				height: 30px;
+			}
+			nav{
+				height: 60px;
+			}
+			/*nav ul {
+				margin: 0px;
+				padding: 5px 0px 5px 30px;}
+			nav li {
+				display: inline;
+				margin-right: 40px;}
+			nav li a {
+				color: #ffffff;}
+			nav li a:hover, nav li a.current {
+				color: #000000;}*/
+
+			nav ul{
+				margin: 10px;
+				margin-right: 100px;
+				padding: 5px 0px 5px 30px;
+				/*margin-left: 40px;*/
+				float: right;
+			}
+			.Kategori ul{
+				padding: 0;
+				margin: 0;
+			}
+			nav ul li{
+				/*background: #efefef;*/
+				position: relative;
+				list-style: none;
+				display: inline-block;
+			}
+			nav ul li a{
+				display: block;
+				padding: 0 15px;
+				color: #ffffff;
+				text-decoration: none;
+			}
+			nav .Kategori li a{
+				color: #ffffff;
+				line-height: 60px;
+				background: #8C8984;
+				/*opacity: 85%;*/
+				border-radius: 5px;
+				/*border-bottom: 2px solid black;*/
+			}
+			nav ul li a:hover, nav li a.current{
+				color: #000000;
+			}
+			nav ul ul{
+				position: absolute;
+				top: 60;
+				display: none;
+			}
+			nav ul li:hover > ul{
+				display: block;
+			}
+			nav ul ul li{
+				width: 150px;
+				float: none;
+				display: list-item;
+				position: relative;
+				margin-top: -15px;
+				padding-right: -50px;
+			}
+			nav ul ul ul li{
+				position: relative;
+				top: -46px;
+				left: 150px;
+				border-left: 0.5px solid #ffffff;
+			}
+
+
+			section.courses {
+				float: left;
+				width: 959px;
+				/*border-right: 1px solid #eeeeee;*/
+				margin-left: 100px;
+			}
+			article {
+				clear: both;
+				overflow: auto;
+				width: 100%;}
+			hgroup {
+				margin-top: 40px;}
+			figure {
+				float: left;
+				width: 290px;
+				height: 220px;
+				padding: 5px;
+				margin: 0px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+
+				border: 1px solid #eeeeee;}
+			figcaption {
+				font-size: 90%;
+				text-align: left;}
+			figcaption.harga{
+				float: right;
+				color: #de6581;
+				margin-right: 15px;
+			}
+			aside {
+				width: 230px;
+				float: left;
+				padding: 0px 0px 0px 20px;
+				margin-top: 130px;
+				margin-left: 80px;
+			}
+			aside section a {
+				display: block;
+				padding: 10px;
+				border-bottom: 1px solid #eeeeee;}
+			aside section a:hover {
+				color: #985d6a;
+				background-color: #efefef;}
+			figure img {
+				/*position: absolute;*/
+				width: 290px;
+				height: 190px;}
+			a {
+				color: #de6581;
+				text-decoration: none;}
+			a h2 {
+				color: #000000;
+			}
+			h1, h2, h3 {
+				font-weight: normal;}
+			h2 {
+				margin: 10px 0px 5px 0px;
+				padding: 0px;}
+			h3 {
+				margin: 0px 0px 10px 0px;
+				color: #de6581;}
+			.video{
+				margin-top: 20px;
+				margin-left: 200px;
+			}
+			aside h2 {
+				padding: 30px 0px 10px 0px;
+				color: #de6581;
+			}
+			footer {
+				font-size: 80%;
+				padding: 7px 0px 0px 20px;}
+		</style>
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<!-- <h1>Warung Tegal</h1> -->
+				<nav>
+					<a href="index.html"><img class="head" src="images/header.png"></a>
+					<ul>
+						<li><a href="index.html">Beranda</a></li>
+						<li><a href="daftar_masakan.html" class="current">Daftar Menu</a></li>
+						<!-- <li><a href="">Katering</a></li> -->
+						<li><a href="">Kategori Menu</a>
+							<ul class="Kategori">
+								<li><a href="#">Menu Berkuah > <i class="fas fa-chevron-down"></i></a>
+									<ul>
+										<li><a href="soto-ayam.html">Soto Ayam</a></li>
+										<li><a href="soto-betawi.html">Soto Betawi</a></li>
+										<li><a href="kikil.html">Gulai Kikil</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Menu Kering > </a>
+									<ul>
+										<li><a href="pecel.html">Pecel Sayur</a></li>
+										<li><a href="orek.html">Tempe Orek</a></li>
+										<li><a href="usus.html">Usus Goreng</a></li>
+										<li><a href="dadar.html">Telur Dadar</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Minuman > </a>
+									<ul>
+										<li><a href="teh.html">Es Teh Manis</a></li>
+										<li><a href="kopi.html">Kopi Hitam</a></li>
+										<li><a href="tehtarik.html">Teh Tarik</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="https://wa.me/6281804698917?text=Saya%20ingin%20bertanya%20mengenai%20pemesanan%20Catering!" target="_blank">Pesan Menu</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+				<hgroup>
+						<h2>Telur Dadar</h2>
+						<h3>Makanan variasi telur yang di kocok dan di goreng</h3>
+				</hgroup>
+				<article>
+					<figure>
+						<img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/sasefoto/original/43050_telur-dadar-jamur.JPG" alt="telur dadar" />
+						<figcaption>Tulur Dadar <figcaption class="harga">IDR. 8.000</figcaption></figcaption>
+					</figure>
+					<iframe class="video" width="340" height="215" src="https://www.youtube.com/embed/cIbaMvN6sUk?autoplay=1&origin=wibloog.com" frameborder="0" allowfullscreen></iframe>
+
+				</article> 
+				<p class="text"style="text-indent: 45px;">Telur dadar atau omelet adalah variasi hidangan telur goreng yang disiapkan dengan cara mengocok telur dan menggorengnya dengan minyak goreng atau mentega panas di sebuah wajan. Telur dadar rasanya sudah tak asing bagi masyarakat Indonesia. Jenis makanan ini menjadi kudapan yang paling mudah dibuat, bahkan oleh mereka yang tak bisa masak sekalipun. Persis dengan mie instan. Istilah dadar sendiri sejatinya itu hanya sebuah nama dari olahan telur menggunakan bahasa Indonesia yang artinya lebar atau dilebarkan. Di luar negeri, seperti benua Eropa dan Amerika, telur dadar dikenal dengan omelet. Menurut Kamus Besar Bahasa Indonesia, dadar berarti telur yang dikocok atau diaduk bersama bumbu (bawang, merica, garam, dan sebagainya) kemudian digoreng, berbentuk pipih.</p>
+				
+			</section>
+			<footer>
+				&copy; Warteg Kelompok 3
+			</footer>
+		</div><!-- .wrapper -->
+	</body>
+</html>
